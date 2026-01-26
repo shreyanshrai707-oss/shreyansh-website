@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronCore Fitness Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Roboto:wght@400;900&display=swap');
+        body { font-family: 'Roboto', sans-serif; background-color: #000; color: white; }
+        h1, h2, h3 { font-family: 'Teko', sans-serif; text-transform: uppercase; }
+        .neon-text { text-shadow: 0 0 10px #ef4444; }
+        .tilt-card { transition: transform 0.1s; transform-style: preserve-3d; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="absolute w-full z-50 py-6 px-8 flex justify-between items-center">
+        <div class="text-3xl font-bold italic tracking-tighter text-red-500">IRON<span class="text-white">CORE</span></div>
+        <a href="#contact" class="border border-red-600 text-red-500 px-6 py-2 hover:bg-red-600 hover:text-white transition font-bold uppercase skew-x-[-10deg]">Join Now</a>
+    </nav>
+
+    <header class="h-screen flex items-center relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <h1 class="text-7xl md:text-9xl font-bold leading-none mb-4">Build <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600 neon-text">Strength.</span></h1>
+            <p class="text-2xl text-gray-300 mb-8 max-w-lg italic">"Boost confidence. Achieve real, sustainable fitness results with professional trainers."</p>
+            <button class="bg-red-600 text-white px-10 py-4 text-xl font-bold uppercase tracking-widest hover:bg-white hover:text-red-600 transition skew-x-[-10deg]">Start Your Fitness Journey Today</button>
+        </div>
+    </header>
+
+    <section class="bg-zinc-900 py-16 border-b border-red-900/30">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 class="text-5xl font-bold text-red-500">24/7</h3>
+                <p class="text-gray-400">Gym Access</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-bold text-red-500">50+</h3>
+                <p class="text-gray-400">Expert Trainers</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-bold text-red-500">100%</h3>
+                <p class="text-gray-400">Results Guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center">Our <span class="text-red-600">Services</span></h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="tilt-card bg-zinc-900 p-8 border-l-4 border-red-600 hover:bg-zinc-800">
+                    <i class="fas fa-dumbbell text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Weight Training</h3>
+                    <p class="text-gray-400 font-sans">State of the art equipment for maximum muscle growth.</p>
+                </div>
+                <div class="tilt-card bg-zinc-900 p-8 border-l-4 border-red-600 hover:bg-zinc-800">
+                    <i class="fas fa-user-friends text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Personal Training</h3>
+                    <p class="text-gray-400 font-sans">One-on-one coaching to help you reach your goals.</p>
+                </div>
+                <div class="tilt-card bg-zinc-900 p-8 border-l-4 border-red-600 hover:bg-zinc-800">
+                    <i class="fas fa-running text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Cardio & Fat Loss</h3>
+                    <p class="text-gray-400 font-sans">High intensity programs to burn fat effectively.</p>
+                </div>
+                <div class="tilt-card bg-zinc-900 p-8 border-l-4 border-red-600 hover:bg-zinc-800">
+                    <i class="fas fa-fist-raised text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Strength & Conditioning</h3>
+                    <p class="text-gray-400 font-sans">Build functional strength and endurance.</p>
+                </div>
+                <div class="tilt-card bg-zinc-900 p-8 border-l-4 border-red-600 hover:bg-zinc-800">
+                    <i class="fas fa-apple-alt text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Diet & Nutrition</h3>
+                    <p class="text-gray-400 font-sans">Customized diet plans to fuel your body right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-b from-black to-red-900/20 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-6xl font-bold mb-8">Ready to <span class="text-red-500">Sweat?</span></h2>
+            <div class="bg-zinc-900/80 p-10 border border-zinc-700 backdrop-blur-sm">
+                <p class="text-2xl mb-2 font-bold">Andheri West, Mumbai (Demo Location)</p>
+                <p class="text-red-500 text-xl mb-6 font-mono">+91 91234 56789</p>
+                <p class="text-white text-lg mb-6">ironcorefitness@gmail.com</p>
+                <p class="text-gray-400 mb-8 font-sans">Morning: 5:30 AM – 10:30 AM <br> Evening: 4:30 PM – 10:00 PM</p>
+                <button class="bg-white text-black px-12 py-4 font-bold uppercase hover:bg-red-600 hover:text-white transition">Visit Us Today</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center border-t border-zinc-900 text-zinc-600 text-xs font-sans">
+        <p>This is a demo website created for portfolio purposes.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.transform = `perspective(1000px) rotateX(${((y - rect.height/2)/rect.height/2)*-10}deg) rotateY(${((x - rect.width/2)/rect.width/2)*10}deg)`;
+            });
+            card.addEventListener('mouseleave', () => { card.style.transform = 'none'; });
+        });
+    </script>
+</body>
+</html>

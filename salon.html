@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap');
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .tilt-card { transition: transform 0.1s; transform-style: preserve-3d; }
+    </style>
+</head>
+<body class="bg-[#fffbfb] text-gray-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-pink-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-pink-900 tracking-wider">Glow & Grace</a>
+            <button class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition shadow-lg shadow-pink-200">Book Now</button>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#fffbfb] via-transparent to-black/30"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl pt-20">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 drop-shadow-sm">Enhancing your beauty with <br><span class="text-pink-600 italic">care & confidence</span></h1>
+            <p class="text-xl text-gray-700 mb-8 font-light">Experience the ultimate relaxation and style transformation.</p>
+            <a href="#contact" class="inline-block bg-gray-900 text-white px-10 py-4 rounded-none uppercase tracking-widest hover:bg-gray-700 transition">Make an Appointment</a>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-8">About Us</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed text-lg">
+            Glow & Grace Salon is a modern beauty salon dedicated to helping you look and feel your best.
+            We offer professional beauty services using high-quality products in a clean, relaxing environment.
+            Our experienced stylists focus on comfort, hygiene, and customer satisfaction.
+        </p>
+    </section>
+
+    <section class="py-20 bg-pink-50 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="tilt-card bg-white p-10 rounded-xl shadow-xl border border-pink-100 text-center group hover:bg-pink-500 transition-colors duration-500">
+                    <i class="fas fa-cut text-4xl text-pink-500 mb-4 group-hover:text-white transition-colors"></i>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white">Haircut & Styling</h3>
+                    <p class="text-gray-500 group-hover:text-pink-100">Expert cuts tailored to your face shape.</p>
+                </div>
+                <div class="tilt-card bg-white p-10 rounded-xl shadow-xl border border-pink-100 text-center group hover:bg-pink-500 transition-colors duration-500">
+                    <i class="fas fa-wind text-4xl text-pink-500 mb-4 group-hover:text-white transition-colors"></i>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white">Hair Smoothening</h3>
+                    <p class="text-gray-500 group-hover:text-pink-100">Keratin treatments for silky smooth hair.</p>
+                </div>
+                <div class="tilt-card bg-white p-10 rounded-xl shadow-xl border border-pink-100 text-center group hover:bg-pink-500 transition-colors duration-500">
+                    <i class="fas fa-star text-4xl text-pink-500 mb-4 group-hover:text-white transition-colors"></i>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white">Bridal & Party Makeup</h3>
+                    <p class="text-gray-500 group-hover:text-pink-100">Look your absolute best on your big day.</p>
+                </div>
+                <div class="tilt-card bg-white p-10 rounded-xl shadow-xl border border-pink-100 text-center group hover:bg-pink-500 transition-colors duration-500">
+                    <i class="fas fa-spa text-4xl text-pink-500 mb-4 group-hover:text-white transition-colors"></i>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white">Facial & Skincare</h3>
+                    <p class="text-gray-500 group-hover:text-pink-100">Rejuvenating treatments for glowing skin.</p>
+                </div>
+                <div class="tilt-card bg-white p-10 rounded-xl shadow-xl border border-pink-100 text-center group hover:bg-pink-500 transition-colors duration-500">
+                    <i class="fas fa-hand-sparkles text-4xl text-pink-500 mb-4 group-hover:text-white transition-colors"></i>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white">Manicure & Pedicure</h3>
+                    <p class="text-gray-500 group-hover:text-pink-100">Complete nail care and relaxation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 container mx-auto px-6">
+        <div class="bg-gray-900 text-white rounded-3xl p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-4">Book Your Appointment Today</h2>
+                <div class="space-y-2 text-gray-300">
+                    <p><i class="fas fa-phone mr-2 text-pink-500"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope mr-2 text-pink-500"></i> glowandgracesalon@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt mr-2 text-pink-500"></i> Sector 18, Noida (Demo Location)</p>
+                    <p class="mt-4 text-pink-400 font-bold">Open: Mon – Sun: 10:00 AM – 8:00 PM</p>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0 relative z-10">
+                <button class="bg-pink-500 text-white px-8 py-4 rounded-full font-bold hover:bg-pink-600 transition shadow-lg shadow-pink-500/50">Call Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 text-center py-6 text-gray-400 text-sm">
+        <p>This is a demo website created for portfolio purposes.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const midX = rect.width / 2;
+                const midY = rect.height / 2;
+                const rotateX = ((y - midY) / midY) * -10; 
+                const rotateY = ((x - midX) / midX) * 10;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
